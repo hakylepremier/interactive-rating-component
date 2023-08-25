@@ -7,7 +7,6 @@
 	--Medium-Grey: #7c8798;
 	--grad-top: #232a32;
 	--grad-bottom: #171e28;
-	/* --Dark-Blue-2: #2b3540; */
 	--Dark-Blue: #252d37;
 	--Very-Dark-Blue: #121417;
 	--Orange: #fb7413;
@@ -21,11 +20,9 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Overpass", sans-serif;
-	/* background-image: url("./design/desktop-design.jpg"); */
-	/* background-image: url("./design/desktop-thank-you-state.jpg"); */
 	background-color: var(--Very-Dark-Blue);
 	color: var(--Medium-Grey);
-	/* background-position: center center; #252d37 */
+	box-sizing: border-box;
 	padding: 5rem;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -44,17 +41,11 @@ h2 {
 }
 
 .main {
-	/* background-color: rgba(124, 135, 152, 0.5); */
-	/* background-color: rgba(37, 45, 55, 0.5); */
-	/* background: radial-gradient(ellipse at top, var(--Dark-Blue), transparent),
-		radial-gradient(ellipse at bottom, var(--Very-Dark-Blue), transparent); */
-
 	background: radial-gradient(
 		ellipse at top,
 		var(--Dark-Blue),
 		var(--grad-bottom)
 	);
-	/* background-color: var(--Dark-Blue); */
 	box-sizing: border-box;
 	min-height: 27.5rem;
 	max-width: 27.5rem;
@@ -66,8 +57,10 @@ h2 {
 
 .thanks {
 	position: absolute;
-	top: 2.15rem;
-	left: 2.15rem;
+	top: 0;
+	left: 0;
+	padding: 2.15rem;
+	padding-bottom: 0;
 	transition: transform 0.5s;
 	transform: scale(1);
 	visibility: visible;
@@ -97,7 +90,6 @@ h2 {
 	margin-top: 2.2rem;
 	padding-bottom: 0;
 	margin-bottom: 0;
-	/* margin-bottom: 0.2rem; */
 }
 
 .paragraph {
@@ -108,14 +100,11 @@ h2 {
 
 .rating {
 	display: flex;
-	/* width: 100%; */
 	gap: 1.45rem;
-	/* justify-content: space-between; */
 	margin-top: 1.8rem;
 }
 
 .btn--rating {
-	/* background-color: rgba(89, 63, 31, 0.5); */
 	background-color: var(--Dark-Blue);
 	font-weight: bold;
 	width: 3.4rem;
@@ -131,7 +120,6 @@ h2 {
 .btn--rating:hover {
 	color: var(--White);
 	background-color: var(--Orange);
-	/* background-color: var(--Medium-Grey); */
 }
 
 .btn--active {
@@ -153,9 +141,7 @@ h2 {
 	color: var(--White);
 	/* background-color: rgba(124, 135, 152, 0.5); */
 	background-color: var(--Orange);
-	/* width: 22.8rem; */
 	width: 100%;
-	/* margin-right: 5rem; */
 	display: block;
 	margin-top: 2.1rem;
 	border-radius: 2rem;
@@ -163,7 +149,6 @@ h2 {
 	border: none;
 	text-transform: uppercase;
 	font-family: "Overpass", sans-serif;
-	/* font-weight: bold; */
 	font-size: 1rem;
 	letter-spacing: 0.1em;
 	transition: all 0.3s;
@@ -192,7 +177,6 @@ h2 {
 	padding-top: 0.4rem;
 	padding-bottom: 0.4rem;
 	border-radius: 2rem;
-	/* display: inline-block; */
 	margin-top: 2rem;
 	margin-left: auto;
 	margin-right: auto;
@@ -215,4 +199,26 @@ h2 {
 	visibility: hidden;
 	transform: scale(0.7);
 	opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.main {
+		padding-bottom: 2.15rem;
+		max-width: 22rem;
+	}
+
+	.rating {
+		gap: 0.7rem;
+	}
+
+	.btn--rating {
+		max-width: 3rem;
+		height: 3rem;
+	}
 }
