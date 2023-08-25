@@ -1,0 +1,118 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap");
+
+:root {
+	--White: #ffffff;
+	--Light-Grey: #959eac;
+	--Medium-Grey: #7c8798;
+	--Dark-Blue: #252d37;
+	--Very-Dark-Blue: #121417;
+	--Orange: #fb7413;
+}
+
+html {
+	font-size: 15px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Overpass", sans-serif;
+	/* background-image: url("./design/desktop-design.jpg"); */
+	color: var(--Medium-Grey);
+	/* background-position: center center; */
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	min-height: 100dvh;
+}
+
+figure,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.thanks {
+	display: none;
+}
+
+.main {
+	/* background-color: rgba(124, 135, 152, 0.5); */
+	box-sizing: border-box;
+	min-height: 27.5rem;
+	max-width: 27.5rem;
+	padding: 2.15rem;
+	padding-bottom: 0;
+}
+
+.star {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3.21rem;
+	height: 3.21rem;
+	border-radius: 2rem;
+	background-color: rgba(89, 63, 31, 0.5);
+}
+
+.heading {
+	color: var(--White);
+	font-size: 1.9rem;
+	margin-top: 2.2rem;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	/* margin-bottom: 0.2rem; */
+}
+
+.paragraph {
+	margin-top: 0.6rem;
+	line-height: 1.6;
+}
+
+.rating {
+	display: flex;
+	/* width: 100%; */
+	gap: 1.45rem;
+	/* justify-content: space-between; */
+	margin-top: 1.8rem;
+}
+
+.btn--rating {
+	background-color: rgba(89, 63, 31, 0.5);
+	width: 3.4rem;
+	height: 3.4rem;
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.radios {
+	display: none;
+}
+
+.margin--right {
+	width: 100%;
+	box-sizing: border-box;
+	padding-right: 0.48rem;
+}
+
+.btn--submit {
+	color: var(--White);
+	background-color: rgba(124, 135, 152, 0.5);
+	/* width: 22.8rem; */
+	width: 100%;
+	/* margin-right: 5rem; */
+	display: block;
+	margin-top: 2.1rem;
+	border-radius: 2rem;
+	padding: 0.9rem;
+	border: none;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: 0.1em;
+}
