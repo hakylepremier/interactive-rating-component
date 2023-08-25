@@ -81,7 +81,7 @@ h2 {
 	width: 3.21rem;
 	height: 3.21rem;
 	border-radius: 2rem;
-	background-color: var(--Medium-Grey);
+	background-color: var(--Dark-Blue);
 }
 
 .heading {
@@ -183,6 +183,7 @@ h2 {
 }
 
 .heading--secondary {
+	font-weight: bold;
 	margin: 0;
 	text-align: center;
 	margin-top: 2.4rem;
