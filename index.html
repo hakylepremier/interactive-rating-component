@@ -33,7 +33,7 @@
 		<!-- Rating state start -->
 
 		<main class="main">
-			<header class="header">
+			<header class="header states">
 				<figure class="star">
 					<img src="./images/icon-star.svg" alt="star icin" />
 				</figure>
@@ -45,7 +45,7 @@
 					is appreciated to help us improve our offering!
 				</p>
 
-				<form action="#" class="choiceForm">
+				<form action="#" id="choiceForm">
 					<section class="rating">
 						<label for="num-1" class="btn--rating">1</label>
 						<label for="num-2" class="btn--rating">2</label>
@@ -62,17 +62,6 @@
 						<input type="radio" id="num-5" name="choice" value="5" />
 					</div>
 
-					<!-- <input type="radio" id="html" name="fav_language" value="HTML" />
-					<label for="html">HTML</label><br />
-					<input type="radio" id="css" name="fav_language" value="CSS" />
-					<label for="css">CSS</label><br />
-					<input
-						type="radio"
-						id="javascript"
-						name="fav_language"
-						value="JavaScript"
-					/>
-					<label for="javascript">JavaScript</label> -->
 					<div class="margin--right">
 						<button type="submit" class="btn--submit">Submit</button>
 					</div>
@@ -83,7 +72,14 @@
 
 			<!-- Thank you state start -->
 
-			<section class="thanks">
+			<section class="thanks states hidden">
+				<figure class="thanks__img">
+					<img
+						src="./images/illustration-thank-you.svg"
+						alt=""
+						class="thanks__img--img"
+					/>
+				</figure>
 				<p class="info">
 					You selected <span class="chosenRating"></span> out of 5
 				</p>
@@ -108,5 +104,7 @@
 				>Frontend Mentor</a
 			>. Coded by <a href="https://www.humphreyyeboah.com">Humphrey Yeboah</a>.
 		</footer>
+
+		<script src="main.js"></script>
 	</body>
 </html>
